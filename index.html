@@ -6,9 +6,18 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p>Search Multiple Websites At Once!</p>
-        <input type="text" id="input">
-        <button id="search">Search</button>
+        <main>
+            <h2>Combine multiple website searches into one!</h2>
+            <form>
+                <input type="text" id="input" value="Enter search term">
+                <input type="submit" id="submit" value="Search">
+                <div id="checkboxes_parent">
+                    <input type="checkbox" class="checkboxes" id="google_check" checked><label for="google_check">Google</label>
+                    <input type="checkbox" class="checkboxes" id="wiki_check"><label for="google_check">Wikipedia</label>
+                    <input type="checkbox" class="checkboxes" id="reddit_check"><label for="google_check">Reddit</label>
+                </div>
+            </form>
+        </main>
     </body>
     <script src="scripts.js"></script>
 </html>
