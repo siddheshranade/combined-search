@@ -2,24 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Search Anywhere</title>
+        <title>CSearch</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/b9484a6827.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <main>
             <h1>Combined Search</h1>
-            <h2>Search multiple websites at once.</h2>
+<!--            <h2>Search multiple websites at once.</h2>-->
             <form>
-                <input type="text" id="search-input" placeholder="Enter search term">
-                <input type="submit" id="submit" value="Search">
-                <p>I would like to search this on: </p>
+                <input type="text" id="search-input" placeholder="Search multiple websites at once">
+                <button type="submit" id="submit-button">Search</button>
                 <div id="checkboxes_parent">
-                    <input type="checkbox" class="checkboxes" id="google-check" checked><label for="google-heck">Google</label>
-                    <input type="checkbox" class="checkboxes" id="wikipedia-check"><label for="wiki-check">Wikipedia</label>
-                    <input type="checkbox" class="checkboxes" id="reddit-check"><label for="google-check">Reddit</label>
+                    <p>I would like to search on: </p>
+                    <input type="checkbox" class="checkboxes" id="google-check" checked><label for="google-check">Google</label>
+                    <input type="checkbox" class="checkboxes" id="wikipedia-check"><label for="wikipedia-check">Wikipedia</label>
+                    <input type="checkbox" class="checkboxes" id="reddit-check"><label for="reddit-check">Reddit</label>
                 </div>
             </form>
         </main>
     </body>
     <script src="scripts.js"></script>
+
 </html>

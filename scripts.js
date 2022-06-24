@@ -28,33 +28,19 @@ function search(e) {
 function searchGoogle(query) {
     let url = `https://www.google.com/search?q=${query}`;
     console.log('Opening Google');
-    // window.open(url, '_blank').focus();
     window.open(url);
-    // openInNewTab(url);
 }
 
 function searchWikipedia(query) {
     let url = `https://en.wikipedia.org/w/index.php?search=${query}`;
     console.log('Opening Wikipedia');
-    // window.open(url, '_blank').focus();
     window.open(url);
-    // openInNewTab(url);
 }
 
 function searchReddit(query) {
     let url = `https://www.reddit.com/search?q=${query}`;
     console.log('Opening Reddit');
-    // window.open(url, '_blank').focus();
     window.open(url);
-    // openInNewTab(url);
-}
-
-function openInNewTab(url) {
-    Object.assign(document.createElement('a'), {
-        target: '_blank',
-        rel: 'noopener noreferrer',
-        href: url
-    }).click();
 }
 
 function getSearchQuery(str) {
