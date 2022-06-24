@@ -4,6 +4,8 @@ const searchForm = document.querySelector('form');
 const textInput = document.querySelector('#search-input');
 const checkboxes = document.querySelectorAll('.checkboxes');
 
+textInput.focus();
+
 /* II. Add listeners */
 
 searchForm.addEventListener('submit', search);
@@ -13,6 +15,10 @@ searchForm.addEventListener('submit', search);
 function search(e) {
     e.preventDefault();
     const searchQuery = getSearchQuery(textInput.value);
+
+    if (!searchQuery) {
+        return;
+    }
 
     if (document.querySelector('#reddit-check').checked) {
         searchReddit(searchQuery);
