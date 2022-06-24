@@ -1,10 +1,10 @@
 /* I. Query relevant DOM elements */
 
 const searchForm = document.querySelector('form');
-const textInput = document.querySelector('#search-input');
+const searchInput = document.querySelector('#search-input');
 const checkboxes = document.querySelectorAll('.checkboxes');
 
-textInput.focus();
+searchInput.focus();
 
 /* II. Add listeners */
 
@@ -14,7 +14,7 @@ searchForm.addEventListener('submit', search);
 
 function search(e) {
     e.preventDefault();
-    const searchQuery = getSearchQuery(textInput.value);
+    const searchQuery = getSearchQuery(searchInput.value);
 
     if (!searchQuery) {
         return;
