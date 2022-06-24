@@ -1,3 +1,66 @@
-body {
+:root {
+    --page-background-color:  #222; /* black-ish */
+    --main-background-color: #222;
+    --main-font-color: #fff;
+}
 
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: var(--page-background-color);
+}
+
+main {
+    border: 1px solid #5f6368;
+    border-radius: 8px;
+
+    background: var(--main-background-color);
+    color: var(--main-font-color);
+    padding: 10px;
+    width: 800px;
+    height: 500px;
+    margin: 50px auto 200px auto;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 48px;
+    font-variant: small-caps;
+}
+
+#search-input {
+    border: 1px solid #222;
+    margin: 0 2px;
+    padding: 4px 5px;
+    border-radius: 3px;
+    height: 30px;
+    width: 400px;
+}
+
+#search-input:focus {
+    outline: none;
+    border: 1px solid #678fff;
+}
+
+#submit-button {
+    background: #678fff;
+    border: 1px solid #678fff;
+    color: #fff;
+    border-radius: 3px;
+    width: 80px;
+    height: 39px;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background: #5c83f0;
+}
+
+#submit-button:focus {
+
+}
+
+#checkboxes_parent {
+    margin-top: 30px;
 }

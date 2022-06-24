@@ -2,13 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Search Anywhere</title>
+        <title>CombinedSearch</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p>Search Multiple Websites At Once!</p>
-        <input type="text" id="input">
-        <button id="search">Search</button>
+        <main>
+            <h1>Combined Search</h1>
+            <form>
+                <input type="text" id="search-input" placeholder="Search multiple websites at once">
+                <button type="submit" id="submit-button">Search</button>
+                <div id="checkboxes_parent">
+                    <p>I would like to search on: </p>
+                    <input type="checkbox" class="checkboxes" id="google-check" checked><label for="google-check">Google</label>
+                    <input type="checkbox" class="checkboxes" id="wikipedia-check"><label for="wikipedia-check">Wikipedia</label>
+                    <input type="checkbox" class="checkboxes" id="reddit-check"><label for="reddit-check">Reddit</label>
+                </div>
+            </form>
+        </main>
     </body>
     <script src="scripts.js"></script>
+
 </html>
