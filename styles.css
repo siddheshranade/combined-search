@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    border: 1px solid #5f6368;
+    /*border: 1px solid #5f6368;*/ /* Not sure if border needed. Commenting out for now. */
     border-radius: 8px;
     background: var(--main-background-color);
     color: var(--main-font-color);
