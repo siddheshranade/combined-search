@@ -2,6 +2,8 @@
     --page-background-color:  #222 /* black-ish */;
     --main-background-color: #222;
     --main-font-color: #fff;
+    --search-button-color-one: #678fff;
+    --search-button-color-two: #5c83f0;
 }
 
 body {
@@ -42,18 +44,19 @@ main h1 {
     border: 1px solid #678fff;
 }
 
-#submit-button {
-    background: #678fff;
-    border: 1px solid #678fff;
+#search-button {
+    background: var(--search-button-color-one);
+    border: 1px solid var(--search-button-color-one);
     color: #fff;
     border-radius: 3px;
     width: 80px;
-    height: 39px;
+    height: 40px;
 }
 
-#submit-button:hover {
+#search-button:hover {
     cursor: pointer;
-    background: #5c83f0;
+    background: var(--search-button-color-two);
+    border-color: var(--search-button-color-two);
 }
 
 #checkboxes-parent {
