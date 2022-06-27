@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>CombinedSearch</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.png">
     </head>
     <body>
         <main>
@@ -11,11 +12,9 @@
             <form>
                 <input type="text" id="search-input" placeholder="Search multiple websites at once">
                 <button type="submit" id="submit-button">Search</button>
-                <div id="checkboxes_parent">
-                    <p>I would like to search on: </p>
-                    <input type="checkbox" class="checkboxes" id="google-check" checked><label for="google-check">Google</label>
-                    <input type="checkbox" class="checkboxes" id="wikipedia-check"><label for="wikipedia-check">Wikipedia</label>
-                    <input type="checkbox" class="checkboxes" id="reddit-check"><label for="reddit-check">Reddit</label>
+                <p id="search-message">I would like to search on: </p>
+                <div id="checkboxes-parent">
+                    <!-- <input type="checkbox"> elements for each website will get inserted here -->
                 </div>
             </form>
         </main>
