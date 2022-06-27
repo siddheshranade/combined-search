@@ -3,8 +3,7 @@
 const URLsByWebsites = {
     'Google' : 'https://www.google.com/search?q=',
     'Reddit' : 'https://www.reddit.com/search?q=',
-    'Wikipedia' : 'https://en.wikipedia.org/w/index.php?search=',
-    'Rate Your Music' : 'https://rateyourmusic.com/search?searchterm='
+    'Wikipedia' : 'https://en.wikipedia.org/w/index.php?search='
 }
 
 /* II. Query relevant DOM elements */
