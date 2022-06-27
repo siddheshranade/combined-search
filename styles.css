@@ -57,17 +57,14 @@ main h1 {
 }
 
 #checkboxes-parent {
-    border: 1px solid green;
     min-height: 50px;
-    /*margin-top: 30px;*/
+    margin-top: 20px;
 }
 
 #search-message {
-    border: 1px solid red;
+
 }
 
 .checkboxes {
-    background: red;
-    border: 1px solid white;
     margin: 0 5px;
 }
