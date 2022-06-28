@@ -21,7 +21,7 @@ a, a:link, a:visited {
 }
 
 main {
-    /*border: 1px solid #5f6368;*/ /* Not sure if border needed. Commenting out for now. */
+    border: 1px solid #5f6368;  N/*ot sure if border needed. Commenting out for now.*/
     border-radius: 8px;
     background: var(--main-background-color);
     color: var(--main-font-color);
@@ -78,7 +78,7 @@ main {
 footer {
     /*border: 1px solid red;*/
 
-    /*width: 97%;*/
+    width: 98%;
     color: #5f6368;
 }
 
@@ -92,7 +92,7 @@ footer {
 }
 
 #footer-link:hover {
-    /*transform: scale(1.02); !* Not using for now cause it creates horizontal scrollbar *!*/
+    transform: scale(1.02); /* Not using for now cause it creates horizontal scrollbar */
 }
 
 #github-image {

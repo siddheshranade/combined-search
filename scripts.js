@@ -12,7 +12,7 @@ const URLsByWebsites = {
 /* II. Query relevant DOM elements */
 
 const searchForm = document.querySelector('form');
-const searchInput = document.querySelector('#search-input');
+const searchInput = document.querySelector('#search-text-input');
 const checkboxesParentDiv = document.querySelector('#checkboxes-parent');
 
 /* III. Define listeners and things to do on page load */
