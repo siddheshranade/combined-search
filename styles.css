@@ -2,15 +2,22 @@
     --page-background-color:  #1c1c1c /* black-ish */;
     --main-background-color: #1c1c1c;
     --main-font-color: #fff;
-    --search-button-color-one: #678fff;
+    --search-button-color-one: #678fff /* blue */;
     --search-button-color-two: #5c83f0;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     font-family: sans-serif;
     box-sizing: border-box;
     background: var(--page-background-color);
+}
+
+a, a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 
 main {
@@ -21,16 +28,16 @@ main {
     padding: 10px;
     width: 800px;
     height: 500px;
-    margin: 50px auto 200px auto;
+    margin: 50px auto;
     text-align: center;
 }
 
-main h1 {
+#main-heading {
     font-size: 48px;
     font-variant: small-caps;
 }
 
-#search-input {
+#search-text-input {
     border: 1px solid #222;
     margin: 0 2px;
     padding: 4px 5px;
@@ -39,7 +46,7 @@ main h1 {
     width: 400px;
 }
 
-#search-input:focus {
+#search-text-input:focus {
     outline: none;
     border: 1px solid #678fff;
 }
@@ -64,10 +71,40 @@ main h1 {
     margin-top: 20px;
 }
 
-#search-message {
-
-}
-
 .checkboxes {
     margin: 0 5px;
+}
+
+footer {
+    /*border: 1px solid red;*/
+
+    /*width: 97%;*/
+    color: #5f6368;
+}
+
+#footer-link {
+    /*border: 1px solid blueviolet;*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-link:hover {
+    /*transform: scale(1.02); !* Not using for now cause it creates horizontal scrollbar *!*/
+}
+
+#github-image {
+    /*border: 1px solid green;*/
+
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0 5px;
+}
+
+#my-name-in-footer {
+    /*border: 1px solid goldenrod;*/
+
+    padding-top: 3px;
 }
