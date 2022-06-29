@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    /*border: 1px solid hotpink;*/
+    border: 1px solid hotpink;
 }
 
 a, a:link, a:visited {
@@ -28,20 +28,26 @@ a, a:link, a:visited {
     text-decoration: none;
 }
 
+/* Main section */
+
 main {
     margin-top: 100px;
     background: var(--main-background-color);
     color: var(--main-font-color);
     padding: 10px;
-    width: 800px;
+    width: 80%;
+    max-width: 900px;
+    /*width: 800px;*/
     text-align: center;
-    /*border: 1px solid #5f6368;  !*Not sure if border needed. Commenting out for now.*!*/
-    /*border-radius: 8px;*/
+
+    border: 1px solid #5f6368;  /*Not sure if border needed. Commenting out for now.*/
+    border-radius: 8px;
 }
 
 #main-heading {
     font-size: 48px;
     font-variant: small-caps;
+    border: 1px solid slateblue;
 }
 
 #search-text-input {
@@ -76,16 +82,31 @@ main {
 #checkboxes-parent {
     min-height: 50px;
     margin-top: 20px;
+    border: 1px solid darkcyan;
 }
 
 .checkboxes {
     margin: 0 5px;
 }
 
+#search-message {
+    border: 1px solid darkorange;
+}
+
+/*@media (max-width: 500px) {*/
+/*    main {*/
+/*        */
+/*    }*/
+/*}*/
+
+
+/* Footer section */
+
 footer {
     width: 98%;
     margin: 10px auto;
     color: #5f6368;
+    border: 1px solid blueviolet;
 }
 
 #footer-link {
@@ -103,8 +124,10 @@ footer {
     max-width: 25px;
     max-height: 25px;
     margin: 0 5px;
+    border: 1px solid bisque;
 }
 
 #my-name-in-footer {
     padding-top: 3px;
+    border: 1px solid salmon;
 }
