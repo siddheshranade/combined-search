@@ -13,6 +13,14 @@ body {
     font-family: sans-serif;
     box-sizing: border-box;
     background: var(--page-background-color);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /*border: 1px solid hotpink;*/
 }
 
 a, a:link, a:visited {
@@ -21,15 +29,14 @@ a, a:link, a:visited {
 }
 
 main {
-    border: 1px solid #5f6368;  /*Not sure if border needed. Commenting out for now.*/
-    border-radius: 8px;
+    margin-top: 100px;
     background: var(--main-background-color);
     color: var(--main-font-color);
     padding: 10px;
     width: 800px;
-    height: 500px;
-    margin: 50px auto;
     text-align: center;
+    /*border: 1px solid #5f6368;  !*Not sure if border needed. Commenting out for now.*!*/
+    /*border-radius: 8px;*/
 }
 
 #main-heading {
@@ -76,15 +83,12 @@ main {
 }
 
 footer {
-    /*border: 1px solid red;*/
-
     width: 98%;
+    margin: 10px auto;
     color: #5f6368;
 }
 
 #footer-link {
-    /*border: 1px solid blueviolet;*/
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,19 +96,15 @@ footer {
 }
 
 #footer-link:hover {
-    transform: scale(1.02); /* Not using for now cause it creates horizontal scrollbar */
+    /*transform: scale(1.02); !* Not using for now cause it creates horizontal scrollbar *!*/
 }
 
 #github-image {
-    /*border: 1px solid green;*/
-
     max-width: 25px;
     max-height: 25px;
     margin: 0 5px;
 }
 
 #my-name-in-footer {
-    /*border: 1px solid goldenrod;*/
-
     padding-top: 3px;
 }
