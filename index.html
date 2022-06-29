@@ -4,20 +4,26 @@
         <meta charset="UTF-8">
         <title>CombinedSearch</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="images/favicon.png">
     </head>
     <body>
         <main>
-            <h1>Combined Search</h1>
+            <h1 id="main-heading">Combined Search</h1>
             <form>
-                <input type="text" id="search-input" placeholder="Search multiple websites at once">
-                <button type="submit" id="submit-button">Search</button>
+                <input type="text" id="search-text-input" placeholder="Search multiple websites at once">
+                <button type="submit" id="search-button">Search</button>
                 <p id="search-message">I would like to search on: </p>
                 <div id="checkboxes-parent">
                     <!-- <input type="checkbox"> elements for each website will get inserted here -->
                 </div>
             </form>
         </main>
+        <footer>
+            <a href="https://github.com/siddheshranade/combined-search" target="_blank" aria-label="View code on GitHub" id="footer-link">
+                <img src="images/github.png" alt="Github logo" id="github-image">
+                <p id="my-name-in-footer">siddheshranade</p>
+            </a>
+        </footer>
     </body>
     <script src="scripts.js"></script>
 

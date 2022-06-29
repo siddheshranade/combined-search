@@ -3,13 +3,16 @@
 const URLsByWebsites = {
     'Google' : 'https://www.google.com/search?q=',
     'Reddit' : 'https://www.reddit.com/search?q=',
-    'Wikipedia' : 'https://en.wikipedia.org/w/index.php?search='
+    'Wikipedia' : 'https://en.wikipedia.org/w/index.php?search=',
+    'YouTube' : 'https://www.youtube.com/results?search_query=',
+    'Hacker News' : 'https://hn.algolia.com/?q=',
+    'Quora' : 'https://www.quora.com/search?q='
 }
 
 /* II. Query relevant DOM elements */
 
 const searchForm = document.querySelector('form');
-const searchInput = document.querySelector('#search-input');
+const searchInput = document.querySelector('#search-text-input');
 const checkboxesParentDiv = document.querySelector('#checkboxes-parent');
 
 /* III. Define listeners and things to do on page load */
