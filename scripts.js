@@ -5,7 +5,7 @@ const URLsByWebsites = {
     'Reddit' : 'https://www.reddit.com/search?q=',
     'Wikipedia' : 'https://en.wikipedia.org/w/index.php?search=',
     'YouTube' : 'https://www.youtube.com/results?search_query=',
-    'HN' : 'https://hn.algolia.com/?q=',
+    'Hacker News' : 'https://hn.algolia.com/?q=',
     'Quora' : 'https://www.quora.com/search?q='
 }
 
