@@ -31,7 +31,7 @@ a, a:link, a:visited {
 /* Main section */
 
 main {
-    margin-top: 100px;
+    margin-top: 6rem;
     background: var(--main-background-color);
     color: var(--main-font-color);
     padding: 10px;
@@ -56,7 +56,8 @@ main {
     padding: 4px 5px;
     border-radius: 3px;
     height: 30px;
-    width: 400px;
+    width: 25rem;
+    max-width: 90%;
 }
 
 #search-text-input:focus {
@@ -104,7 +105,7 @@ main {
 
 footer {
     width: 98%;
-    margin: 10px auto;
+    margin: 1rem auto;
     color: #5f6368;
     border: 1px solid blueviolet;
 }
