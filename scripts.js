@@ -29,8 +29,10 @@ function addWebsiteCheckboxesToDOM() {
 
     checkboxesParentDiv.innerHTML =  websites.map(website => {
         return `
-            <input type="checkbox" class="checkboxes" id="${website}">
-                <label for="${website}">${website}</label>
+            <label for="${website}">
+                <input type="checkbox" class="checkboxes" id="${website}">
+                ${website}
+            </label>
         `
     }).join('');
 }
