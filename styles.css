@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
     background: var(--page-background-color);
     height: 100vh;
-    width: auto;
+    width: auto; /* For mobile view */
 
     display: flex;
     flex-direction: column;
@@ -35,10 +35,9 @@ main {
     margin-top: 6rem;
     background: var(--main-background-color);
     color: var(--main-font-color);
-    padding: 10px;
+    padding: 1rem;
     width: 80%;
     max-width: 900px;
-    /*width: 800px;*/
     text-align: center;
 
     border: 1px solid #5f6368;  /*Not sure if border needed. Commenting out for now.*/
@@ -95,18 +94,9 @@ main {
     border: 1px solid darkorange;
 }
 
-/*@media (max-width: 500px) {*/
-/*    main {*/
-/*        */
-/*    }*/
-/*}*/
-
-
-/* Footer section */
-
 footer {
     width: 98%;
-    margin: 1rem auto;
+    margin: 1rem 0 2rem 0;
     color: #5f6368;
     border: 1px solid blueviolet;
 }
@@ -119,7 +109,7 @@ footer {
 }
 
 #footer-link:hover {
-    /*transform: scale(1.02); !* Not using for now cause it creates horizontal scrollbar *!*/
+    transform: scale(1.02);
 }
 
 #github-image {
