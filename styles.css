@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    border: 1px solid hotpink;
+    /*border: 1px solid hotpink;*/
 }
 
 a, a:link, a:visited {
@@ -40,14 +40,14 @@ main {
     max-width: 900px;
     text-align: center;
 
-    border: 1px solid #5f6368;  /*Not sure if border needed. Commenting out for now.*/
-    border-radius: 8px;
+    /*border: 1px solid #5f6368;  !*Not sure if border needed. Commenting out for now.*!*/
+    /*border-radius: 8px;*/
 }
 
 #main-heading {
     font-size: 48px;
     font-variant: small-caps;
-    border: 1px solid slateblue;
+    /*border: 1px solid slateblue;*/
 }
 
 #search-text-input {
@@ -62,7 +62,7 @@ main {
 
 #search-text-input:focus {
     outline: none;
-    border: 1px solid #678fff;
+    border: 1px solid var(--search-button-color-one);
 }
 
 #search-button {
@@ -83,7 +83,7 @@ main {
 #checkboxes-parent {
     min-height: 50px;
     margin-top: 20px;
-    border: 1px solid darkcyan;
+    /*border: 1px solid darkcyan;*/
 }
 
 .checkboxes {
@@ -91,14 +91,14 @@ main {
 }
 
 #search-message {
-    border: 1px solid darkorange;
+    /*border: 1px solid darkorange;*/
 }
 
 footer {
     width: 98%;
     margin: 1rem 0 2rem 0;
     color: #5f6368;
-    border: 1px solid blueviolet;
+    /*border: 1px solid blueviolet;*/
 }
 
 #footer-link {
@@ -116,10 +116,10 @@ footer {
     max-width: 25px;
     max-height: 25px;
     margin: 0 5px;
-    border: 1px solid bisque;
+    /*border: 1px solid bisque;*/
 }
 
 #my-name-in-footer {
     padding-top: 3px;
-    border: 1px solid salmon;
+    /*border: 1px solid salmon;*/
 }
