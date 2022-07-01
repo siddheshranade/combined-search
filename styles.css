@@ -14,6 +14,7 @@ body {
     box-sizing: border-box;
     background: var(--page-background-color);
     height: 100vh;
+    width: auto;
 
     display: flex;
     flex-direction: column;
