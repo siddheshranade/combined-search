@@ -1,9 +1,8 @@
 :root {
-    --page-background-color:  #1c1c1c /* black-ish */;
-    --main-background-color: #1c1c1c;
-    --main-font-color: #fff;
-    --search-button-color-one: #678fff /* blue */;
-    --search-button-color-two: #5c83f0;
+    --background-color: #1c1c1d; /* Black-ish */;
+    --main-font-color: #fff; /* White */
+    --search-button-color-one: #678fff /* Blue */;
+    --search-button-color-two: #5c83f0; /* Blue (darker) */;
 }
 
 body {
@@ -12,15 +11,14 @@ body {
     font-size: 16px;
     font-family: sans-serif;
     box-sizing: border-box;
-    background: var(--page-background-color);
+    background: var(--background-color);
     height: 100vh;
+    width: auto; /* For mobile view */
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    /*border: 1px solid hotpink;*/
 }
 
 a, a:link, a:visited {
@@ -28,43 +26,45 @@ a, a:link, a:visited {
     text-decoration: none;
 }
 
+/* Main section */
+
 main {
-    margin-top: 100px;
-    background: var(--main-background-color);
+    margin-top: 6rem;
     color: var(--main-font-color);
-    padding: 10px;
-    width: 800px;
+    padding: 1rem;
+    width: 80%;
+    max-width: 900px;
     text-align: center;
-    /*border: 1px solid #5f6368;  !*Not sure if border needed. Commenting out for now.*!*/
-    /*border-radius: 8px;*/
 }
 
 #main-heading {
-    font-size: 48px;
+    font-size: 3rem;
     font-variant: small-caps;
 }
 
 #search-text-input {
-    border: 1px solid #222;
-    margin: 0 2px;
-    padding: 4px 5px;
+    border: 1px solid var(--background-color);
+    margin: 0.2rem;
+    padding: 0.25rem;
     border-radius: 3px;
-    height: 30px;
-    width: 400px;
+    height: 1.8rem;
+    width: 95%;
+    max-width: 25rem;
 }
 
 #search-text-input:focus {
     outline: none;
-    border: 1px solid #678fff;
+    border: 1px solid var(--search-button-color-one);
 }
 
 #search-button {
-    background: var(--search-button-color-one);
     border: 1px solid var(--search-button-color-one);
-    color: #fff;
+    background: var(--search-button-color-one);
+    color: var(--main-font-color);
+    font-size: 85%;
     border-radius: 3px;
-    width: 80px;
-    height: 40px;
+    width: 5rem;
+    height: 2.5rem;
 }
 
 #search-button:hover {
@@ -74,18 +74,28 @@ main {
 }
 
 #checkboxes-parent {
-    min-height: 50px;
-    margin-top: 20px;
+    min-height: 3rem;
+    margin-top: 1.2rem;
 }
 
 .checkboxes {
-    margin: 0 5px;
+    margin: 0 0.3rem;
+}
+
+label {
+    white-space: nowrap; /* So there's no line break between checkbox and its corresponding website label */
 }
 
 footer {
     width: 98%;
-    margin: 10px auto;
-    color: #5f6368;
+    margin: 1rem 0 2rem 0;
+    color: #5f6368; /* Grey */
+}
+
+@media (max-width: 500px) {
+    footer {
+        margin-bottom: 4rem;
+    }
 }
 
 #footer-link {
@@ -96,13 +106,13 @@ footer {
 }
 
 #footer-link:hover {
-    /*transform: scale(1.02); !* Not using for now cause it creates horizontal scrollbar *!*/
+    transform: scale(1.02);
 }
 
 #github-image {
-    max-width: 25px;
-    max-height: 25px;
-    margin: 0 5px;
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+    margin: 0 0.3rem;
 }
 
 #my-name-in-footer {

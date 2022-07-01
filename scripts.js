@@ -27,12 +27,8 @@ searchForm.addEventListener('submit', search);
 function addWebsiteCheckboxesToDOM() {
     let websites = Object.keys(URLsByWebsites);
 
-    checkboxesParentDiv.innerHTML =  websites.map(website => {
-        return `
-            <input type="checkbox" class="checkboxes" id="${website}">
-                <label for="${website}">${website}</label>
-        `
-    }).join('');
+    checkboxesParentDiv.innerHTML =
+        websites.map(website => getWebsiteCheckboxHTMLElement(website)).join('');
 }
 
 function search(e) {
@@ -50,6 +46,15 @@ function search(e) {
             window.open(`${baseSearchURL}${searchQuery}`);
         }
     })
+}
+
+function getWebsiteCheckboxHTMLElement(websiteName) {
+    return `
+            <label for="${websiteName}">
+                <input type="checkbox" class="checkboxes" id="${websiteName}">
+                ${websiteName}
+            </label>
+        `;
 }
 
 function getSearchQuery(str) {
