@@ -2,4 +2,6 @@
 
 The website is live at: https://combinedsearch.io.
 
-This is a search engine to combine multiple website searches into one.
+No setup requried. But do make sure you're allowing popus in the browser so that multiple tabs can open simultaneously.
+
+Suggestions, bug reports, and improvements are welcome.
