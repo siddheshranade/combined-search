@@ -92,6 +92,12 @@ footer {
     color: #5f6368; /* Grey */
 }
 
+@media (max-width: 500px) {
+    footer {
+        margin-bottom: 4rem;
+    }
+}
+
 #footer-link {
     display: flex;
     flex-direction: row;
