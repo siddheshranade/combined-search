@@ -7,7 +7,8 @@ const URLsByWebsites = {
     'YouTube' : 'https://www.youtube.com/results?search_query=',
     'Hacker News' : 'https://hn.algolia.com/?q=',
     'Quora' : 'https://www.quora.com/search?q=',
-    'StackOverflow' : 'https://stackoverflow.com/search?q='
+    'Stack Overflow' : 'https://stackoverflow.com/search?q=',
+    'Twitter' : 'https://twitter.com/search?q='
 }
 
 /* II. Query relevant DOM elements */
