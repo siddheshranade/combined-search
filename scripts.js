@@ -6,7 +6,8 @@ const URLsByWebsites = {
     'Wikipedia' : 'https://en.wikipedia.org/w/index.php?search=',
     'YouTube' : 'https://www.youtube.com/results?search_query=',
     'Hacker News' : 'https://hn.algolia.com/?q=',
-    'Quora' : 'https://www.quora.com/search?q='
+    'Quora' : 'https://www.quora.com/search?q=',
+    'StackOverflow' : 'https://stackoverflow.com/search?q='
 }
 
 /* II. Query relevant DOM elements */
