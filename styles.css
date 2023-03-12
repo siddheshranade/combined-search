@@ -86,7 +86,10 @@ main {
     border: 1px solid var(--search-button-color-one);
     background: var(--search-button-color-one);
     color: var(--main-font-color);
+    border-radius: 3px;
 }
+
+#clearSelectionsBtn:disabled { } 
 
 label {
     white-space: nowrap; /* So there's no line break between checkbox and its corresponding website label */
