@@ -16,13 +16,13 @@ const URLsByWebsites = {
 const searchForm = document.querySelector('form');
 const searchInput = document.querySelector('#search-text-input');
 const checkboxesParentDiv = document.querySelector('#checkboxes-parent');
-const clearSelectionsBtn = document.querySelector('#clearSelectionsBtn')
+const clearSelectionsButton = document.querySelector('#clear-selections-button')
 const checkedStates = new Map();
 
 /* III. Define listeners and things to do on page load */
 
 addEventListener('DOMContentLoaded', (event) => {
-    clearSelectionsBtn.disabled = true;
+    clearSelectionsButton.disabled = true;
 });
 
 addWebsiteCheckboxesToDOM();
@@ -71,13 +71,13 @@ function getSearchQuery(str) {
 
 function handleChecked(event) {
     checkedStates.set(event.target.id, event.target.checked);
-    clearSelectionsBtn.disabled = Array.from(checkedStates.values()).every((value) => !value);
+    clearSelectionsButton.disabled = Array.from(checkedStates.values()).every((value) => !value);
 }
 
 function clearSelections() {
     document.querySelectorAll('.checkboxes').forEach((checkbox) => {
         checkbox.checked = false;
     });
-    clearSelectionsBtn.disabled = true;
+    clearSelectionsButton.disabled = true;
     checkedStates.clear();
 }

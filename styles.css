@@ -57,18 +57,30 @@ main {
     border: 1px solid var(--search-button-color-one);
 }
 
+button {
+  border: 1px solid var(--search-button-color-one);
+  background: var(--search-button-color-one);
+  color: var(--main-font-color);
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled, button[disabled] {
+ opacity: 0.3; 
+ cursor: auto;
+}
+
 #search-button {
-    border: 1px solid var(--search-button-color-one);
-    background: var(--search-button-color-one);
-    color: var(--main-font-color);
     font-size: 85%;
-    border-radius: 3px;
     width: 5rem;
     height: 2.5rem;
 }
 
 #search-button:hover {
-    cursor: pointer;
     background: var(--search-button-color-two);
     border-color: var(--search-button-color-two);
 }
